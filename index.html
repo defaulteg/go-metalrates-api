@@ -1,0 +1,73 @@
+<html>
+<head>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/curl.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div id="header-logo">
+        <a href="#"><img id="logo" src="http://clone.leadgalaxy.com/wp-content/uploads/2013/10/currencyindex.png" alt="logo"></a>
+    </div>
+    <div id="currency-image">
+        <a href="#"><img id="motto-image" src="https://lh3.googleusercontent.com/9l-6vBOD-K0yGueQd_y-VV5M86ck1oprqg1EXqjztsCUaHKkoLR5NOY6EpXAw_JD-K3SmHZW=s630-fcrop64=1,000000b0ff9bffff" alt="logo"></a>
+        <span id="motto-text">GET YOUR RATES WITH CURRENCY API</span>
+    </div>
+</div>
+
+<div id="navbar">
+    <ul>
+        <li><a href="#content-currency">Currency</a></li>
+        <li><a href="#section-2">Cryptocurrency</a></li>
+        <li><a href="#section-3">Metals</a></li>
+    </ul>
+</div>
+
+<div class="wrapper">
+    <div class="content">
+        <div id="content-about">
+            <p>CurrencyIndex is a free JSON API for latest and historical currency, cryptocurrency and metal rates.</p>
+            <p>Update time for each element category is set according to schedule: </p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Update Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Currency</strong></td>
+                    <td>Every working day at 13:00 UTC</td>
+                </tr>
+                <tr>
+                    <td><strong>Local Currency</strong></td>
+                    <td>Every hour on working days</td>
+                </tr>
+                <tr>
+                    <td><strong>Cryptocurrency</strong></td>
+                    <td>Every 5 minutes</td>
+                </tr>
+                <tr>
+                    <td><strong>Metals</strong></td>
+                    <td>Every 5 minutes on working days</td>
+                </tr>
+                </tbody>
+            </table>
+            <h2>USAGE</h2>
+            <p>Each category has specific parameters and paths. In the next sections basic usage principles are desribed for each of them.</p>
+        </div>
+        <div id="content-currency">
+            <h3>CURRENCY</h3>
+            <p>Currency rates are loaded through the /baserates/ URI part.</p>
+            <p>The next section of the URI points defines time: latest/hitorical.</p>
+            <p><strong>Example:</strong></p>
+            <pre class="api-link"><a href="http://localhost:8080/baserates/latest">http://www.currencyindex.com/baserates/latest</a></pre>
+            <p>This GET request will return all the latest rates of foreigh currencies.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
